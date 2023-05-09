@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    
+  </head>
+  <body>
+    <section class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2>Menu</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- filter buttons -->
+      <div class="btn-container">
+        <button type="button" class="filter-btn" data-id="tudo">Tudo</button>
+        <button type="button" class="filter-btn" data-id="lanches">Lanches</button>
+        <button type="button" class="filter-btn" data-id="sorvetes">Sorvetes</button>
+        <button type="button" class="filter-btn" data-id="pizzas">Pizzas</button>
+        <button type="button" class="filter-btn" data-id="bebibas">Bebidas</button> 
+      </div>
+      <!-- menu items -->
+      <div class="section-center">
+       
+      </div>
+      <div class="add-food">
+        <button type="button" class="btn-add" id="add-food" onclick="openForm()" >+<button></div>
+      <section id="modal-foods">
+        <div id="form-foods">
+          <button type="button" class="btn-exit" id="exit-form" onclick="exitForm()">x</button>
+          <h3>Nova Comida</h3>
+          <form>
+            <label>Comida:</label> <input type="text" name="food" />
+            <label>Categoria:</label> 
+              <select id="category" name="category">
+                <option value="lanches">Lanches</option>
+                <option value="sorvetes">Sorvetes</option>
+                <option value="pizzas">Pizzas</option>
+                <option value="bebibas">Bebidas</option>
+            </select>
+            <label>Preço:</label> <input type="text" name="price" />
+            <label>Imagem:</label> <input type="file" name="img" />
+            <label>Descrição:</label><input type="text" name="desc" />
+            <div class="buttons-form">
+              <button type="button" class="btn" onclick="saveFood()">Salvar</button>
+              <button type="reset" class="btn">Limpar</button>
+            </div>
+          </form>
+        </div>
+    </section>
+    <!-- javascript -->
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
