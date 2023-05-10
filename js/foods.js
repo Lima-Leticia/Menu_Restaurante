@@ -25,8 +25,8 @@ const menu = [
   },
   {
     id: 4,
-    title: "Pizza 1",
-    category: "pizzas",
+    title: "Refrigerante",
+    category: "bebidas",
     price: 18.99,
     img: "./images/item-4.jpg",
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in dolor in.  `,
@@ -41,8 +41,8 @@ const menu = [
   },
   {
     id: 6,
-    title: "Refrigerante",
-    category: "bebidas",
+    title: "Pizza 1",
+    category: "pizzas",
     price: 5.99,
     img: "./images/item-6.jpg",
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin magna. `,
