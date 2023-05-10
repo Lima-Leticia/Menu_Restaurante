@@ -36,7 +36,7 @@ import menu from "./foods.js";
   
     sectionCenter.innerHTML = displayMenu;
   }
-  //Função que filtra as buscas ao clicar no botão
+  
   function displayMenuButtons() {
     const categories = menu.reduce(
       function (values, item) {
@@ -58,7 +58,7 @@ import menu from "./foods.js";
     btnContainer.innerHTML = categoryBtns;
     const filterBtns = btnContainer.querySelectorAll(".filter-btn");
     console.log(filterBtns);
-  
+   
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function (e) {
         const category = e.currentTarget.dataset.id;
