@@ -5,7 +5,6 @@ import menu from "./foods.js";
   
   var CONTADOR = menu.length + 1;
 
-  // Mostra todos os itens quando a Página é carregada
   window.addEventListener("DOMContentLoaded", function () {
     displayMenuItems(menu);
     displayMenuButtons();
